@@ -17,19 +17,5 @@ cd path/to/app
 ```
 5. Start the app
 ```sh
-streamlit run app.py
+python main.py -i /path/to/known/images/folder
 ```
-
-<!-- # TODO:
-[x] Create env
-[x] Create page streamlit 
-[x] Organisation project - Folder Creation
-[x] Organisation project - Deplace data
-[x] debug paths
-[] debug streamlit
-[ ] debug the project and comment it
-[ ] Build Docker File
-[ ] To RP5
-
-# Recommandation:
-1. use streamlit 1.30 for video capturing  -->

@@ -20,7 +20,7 @@ cd path/to/app
 streamlit run app.py
 ```
 
-# TODO:
+<!-- # TODO:
 [x] Create env
 [x] Create page streamlit 
 [x] Organisation project - Folder Creation
@@ -32,4 +32,4 @@ streamlit run app.py
 [ ] To RP5
 
 # Recommandation:
-1. use streamlit 1.30 for video capturing 
+1. use streamlit 1.30 for video capturing  -->

@@ -1,0 +1,27 @@
+# Utiliser une image Python comme base
+FROM python:3.10-slim
+
+# Mettre à jour l'image et installer les dépendances système nécessaires
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    cmake\
+    libopencv-dev \
+    libgl1-mesa-glx \
+    && rm -rf /var/lib/apt/lists/*
+
+# Installer les bibliothèques Python nécessaires
+COPY requirements.txt ./
+RUN pip install --upgrade pip \
+    && pip install --no-cache-dir face_recognition opencv-python pandas
+# Copier les fichiers du projet dans le conteneur
+# COPY . /app
+
+# Définir le répertoire de travail
+WORKDIR /app
+
+# Exposer le port (si nécessaire pour une API ou une interface)
+EXPOSE 8080
+
+# Commande par défaut pour exécuter le script principal
+CMD ["bash"]
+# CMD ["python", "main.py"]

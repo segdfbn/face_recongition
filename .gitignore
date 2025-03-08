@@ -1,0 +1,5 @@
+__pyc*
+
+/data
+*venv/
+models/
